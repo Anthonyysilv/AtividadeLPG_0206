@@ -1,4 +1,4 @@
-﻿//Desenvolver uma aplicação em C# para calcular e mostrar informações de um aluno em seu respectivo curso e turma.
+//Desenvolver uma aplicação em C# para calcular e mostrar informações de um aluno em seu respectivo curso e turma.
 //Deve-se informar as 4 médias do aluno e calcular a média final.
 //Informar se esta aprovado, reprovado ou de recuperação.
 //Usar agregação, sobrecarga de métodos e construtores (ID e nome Aluno).
@@ -12,6 +12,11 @@ class Aluno
     public int codigoAluno;
     public int serieAluno;
     public string cursoAluno;
+
+    public Aluno(string curso)
+    {
+        
+    }
 }
 class MediaFinal
 {
@@ -28,6 +33,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        int opc, opc2;
         Console.WriteLine("------------------Sistema Escolar------------------");
         Console.WriteLine("Informe, dentre as opções, o'que se deseja fazer");
         Console.WriteLine("1 - Acessar informações de um aluno");
@@ -35,5 +41,12 @@ class Program
         Console.WriteLine("3 - Adicionar notas para o calculo da média semestral");
         Console.WriteLine("4 - Filtrar alunos aprovados/recuperação/reprovados");
         Console.WriteLine("5 - Relatório dos alunos");
+        opc = Convert.ToInt32(Console.ReadLine());
+        switch (opc)
+        {
+            case 1:
+                Console.WriteLine("Informe o nome");
+                break;
+        }    
     }
 }
