@@ -32,6 +32,8 @@ class Program
         Console.WriteLine("Informe, dentre as opções, o'que se deseja fazer");
         Console.WriteLine("1 - Acessar informações de um aluno");
         Console.WriteLine("2 - Adicionar notas para o calculo da média final");
-        Console.WriteLine("3 - Filtrar alunos aprovados/recuperação/reprovados");
+        Console.WriteLine("3 - Adicionar notas para o calculo da média semestral");
+        Console.WriteLine("4 - Filtrar alunos aprovados/recuperação/reprovados");
+        Console.WriteLine("5 - Relatório dos alunos");
     }
 }
